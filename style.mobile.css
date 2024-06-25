@@ -1,0 +1,420 @@
+@media screen and (max-width: 1350px) {
+  .calculate__human {
+    padding-top: 100px;
+  }
+  .calculate .container {
+    width: 90% !important;
+  } 
+  .calculate__row {
+    flex-direction: column;
+  }
+  .calculate__row {
+    align-items: center;
+  }
+  .calculate__test {
+    width: 100%;
+  }
+  .calculate__gift {
+    width: 300px;
+  }
+  .calculate__info .parallelepiped {
+    gap: 0;
+  }
+  .calculate__gift img {
+    width: 140px;
+  }
+  .calculate__additional-package, .calculate__checklist {
+    width: 340px;
+  }
+  .header__left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container {
+    max-width: 90vw;
+    min-width: 0;
+  }
+  .main__title {
+    font-size: 75px;
+  }
+  .main__description {
+    font-size: 58px;
+    line-height: 54px;
+  }
+  
+  .age__title {
+    font-size: calc(18px + 44 * (100vw / 1280));
+    line-height: calc(35px + 44 * (100vw / 1280));
+  }
+  .age__description {
+    font-size: calc(14px + 44 * (100vw / 1280));
+    line-height: calc(23px + 44 * (100vw / 1280));
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .calculate__info {
+    flex-direction: column;
+  }
+  .calculate__gift {
+    margin: 60px 0 40px 0;
+  }
+  .calculate__additional-package, .calculate__checklist  {
+    width: 500px;
+    margin-bottom: 30px;
+  }
+  .main__words-button {
+    align-items: flex-end;
+  }
+  .main__card {
+    display: none;
+  }
+  .main__info-list {
+    flex-direction: column;
+  }
+  .main__words-button {
+    flex-direction: column;
+  }
+  .main__button-container .button {
+    max-width: 100%;
+    padding: 40px 68px;
+  }
+  .main__info-list span {
+    align-items: normal;
+  }
+  .main__info-list {
+    width: 100%;
+  }
+  .main__info-list span img {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .calculate__test {
+    width: 100%;
+  }
+  .calculate__test-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .calculate__title {
+    font-size: calc(20px + 28 * (100vw / 1280));
+    margin: 0;
+  }
+  .best__packages {
+    gap: normal;
+    justify-content: space-between;
+    width: 80%;
+    height: 500px;
+    overflow-y: scroll;
+    padding-top: 25px;
+  }
+  .best__card {
+    width: 40%;
+  }
+  .age {
+    text-align: left;
+  }
+  
+  .main__title {
+    font-size: calc(23px + 43 * (100vw / 1280));
+  }
+  .main__description {
+    font-size: calc(27px + 31 * (100vw / 1280));
+    line-height: calc(30px + 31 * (100vw / 1280));
+  }
+  .header .container {
+    align-items: flex-start;
+  }
+  .header__right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .main__button-container .button {
+    max-width: 100%;
+    padding: 25px 68px;
+  }
+  .age__interval-text img {
+    display: none;
+  }
+  .age__status-bar img {
+    display: block;
+  }
+  .age__status-bar {
+    padding-top: 15px;
+  }
+  .age__five, 
+  .age__twelve,
+  .age__sixteen {
+    flex-direction: column;
+    align-items: flex-start;
+    left: 40px;
+  }
+  
+  .age__five .age__interval-about, 
+  .age__twelve .age__interval-about,
+  .age__sixteen .age__interval-about {
+    position: relative;
+    left: 45px;
+  }
+  .age__five {
+    top: 135px;
+  }
+  .age__twelve .age__interval-about {
+    top: -52px;
+  }
+  .age__sixteen {
+   top: 1010px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .best__title {
+    font-size: calc(42px + 18 * (100vw / 1280)); 
+  }
+  .age__card h3 {
+    font-size: 16px;
+    padding: 0;
+  }
+  .age__twelve .age__card.parallelepiped {
+    width: 84vw;
+  }
+  .age__ages {
+    font-size: 14px;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  .age__card-title {
+    padding-left: 10px;
+    width: 65px;
+    height: 90px !important;
+  }
+  .age__twelve .age__card-title {
+    width: 120px; 
+  }
+  .age__sixteen .age__card-title {
+    width: 100px; 
+  }
+  .age__card {
+    height: 120px !important;
+  } 
+  .parallelepiped {
+    padding-left: 5px !important;
+    justify-content: flex-start !important;
+  }
+  .age__card-description {
+    transform: skewY(0deg) !important;
+    padding: 0;
+    padding-left: 10px;
+    width: 70% !important;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .calculate__test {
+    height: 480px;
+    width: 90%;
+  }
+  .variant {
+    width: 40%;
+    padding: 10px;
+  }
+  .variant__description {
+    width: 90%;
+    font-size: 12px;
+  }
+  .calculate__test-title {
+    font-size: 28px;
+    margin: 0;
+  }
+  .header__left span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .age__card .parallelepiped {
+    width: 400px !important;
+  }
+  .age__card-description {
+    width: 60% !important;
+    font-size: 20px;
+  }
+
+  .header__whatsapp-phone {
+    font-size: 20px;
+  }
+  .header__whatsapp img {
+    width: 32px;
+    height: 32px;
+  }
+  .main__button-container .button {
+    font-size: 17px;
+    padding: 16px;
+  }
+  .main__btn-gift {
+    font-size: 16px;
+    bottom: -9px;
+  }
+} 
+
+@media screen and (max-width: 600px) {
+  
+  .variant {
+    width: 100% !important;
+  }
+  .calculate__variants {
+    margin-bottom: 30px;
+  }
+  .best__packages {
+    width: 410px;
+    justify-content: start;
+    gap: 10px;
+    
+  }
+  .best__card {
+    width: 200px;
+  }
+  .main__words-button {
+    align-items: center;
+  }
+  .header__left {
+    width: 50%;
+  }
+  .header__right {
+    width: 40%;
+  }
+  .main__words .parallelepiped span {
+    font-size: 17px;
+  }
+  .header__button button {
+    font-size: 13px;
+    line-height: 13px;
+    width: 150px;
+  }
+
+  .header__left img {
+    width: 200px;
+  }
+  .main__btn-gift {
+    font-size: 12px;
+    right: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .calculate__info .parallelepiped,
+  .calculate__checklist .parallelepiped {
+    width: 275px !important;
+    padding: 0;
+  }
+  .calculate__additional-package img {
+    width: 75px;
+  }
+  .calculate__checklist img {
+    width: 100px;
+  }
+  .calculate__info .parallelepiped p {
+    font-size: 17px;
+  }
+  .calculate__card-description {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .best__card {
+    width: 150px;
+  }
+  .best__packages {
+    width: 310px;
+  }
+  .age__card {
+    width: 80vw !important;
+  }
+  .age__status-bar {
+    display: block;
+  }
+  .age__card .parallelepiped {
+    width: 208px;
+  }
+  .age__card-description {
+    width: 57%;
+    font-size: 13px;
+  }
+  .main__words .parallelepiped span {
+    font-size: 14px;
+  }
+  .main .container {
+    padding-top: 245px;
+  }
+  .made-in-russia {
+    font-size: 11px;
+  }
+  .header__russia {
+    font-size: 14px;
+  }
+  .header__left img {
+    width: 150px;
+  }
+  .header__button button {
+    font-size: 11px;
+    line-height: 5px;
+    width: 132px;
+  }
+  .header__left {
+    gap: 8px;
+  }
+  .header__left span {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .header__whatsapp img {
+    width: 25px;
+    height: 25px;
+  }
+  .header__whatsapp-phone {
+    font-size: 13px;
+  }
+  .main__button-container .button {
+    font-size: 12px;
+  }
+  .main__btn-gift {
+    font-size: 9px;
+  }
+  .main__title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .main__description {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+  .main__info-list span img {
+    width: 19px;
+  }
+  .main__info-list {
+    font-size: 18px;
+  }
+  .best .button {
+    font-size: 17px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main__words .parallelepiped span {
+    font-size: 12px;
+    padding: 15px 6px 20px 10px;
+  }
+  .main__title {
+    font-size: 26px;
+    line-height: 37px;
+  }
+  .main__description {
+    font-size: 19px;
+    line-height: 23px;
+  }
+} 
