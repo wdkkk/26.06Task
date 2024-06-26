@@ -66,6 +66,38 @@ h1{
     gap: 20px;
     margin:0 auto 20px auto;
 }
+.form__calltime .form__connect,
+.modal__row__right .form__connect {
+    color: #BEBEBE;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+.form__calltime {
+    border: 1px solid rgba(217, 217, 217, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 88%;
+    height: 73px;
+}
+.form__calltime__variant {
+    width: 220px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    padding: 28px 0;
+    cursor: pointer;
+}
+.form__calltime__variant.selected {
+    color: #fff;
+    background: rgba(189, 131, 233, 1);
+    border-radius: 10px;
+    padding: 25px 0;
+}
+
 .form__connect{
     margin: 0 auto 20px auto;
     font-size: 20px;
@@ -226,12 +258,12 @@ h1{
 
   .modal-content {
     position: relative;
-    background-color: #fefefe;
-    margin: 15% auto; 
-    padding: 20px;
-    border: 1px solid #888;
+    background-color: #FFCF40;
+    margin: 2% auto; 
+    padding: 50px 65px;
+    border: none;
     width: 80%;
-    max-width: 500px; 
+    max-width: 1260px; 
     border-radius: 8px;
     animation: slideDown 0.5s;
     z-index: 2000;
@@ -243,7 +275,7 @@ h1{
   }
 
   .close {
-    color: #aaa;
+    color: #000000;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -1782,4 +1814,59 @@ footer .header__whatsapp-phone {
 }
 #shopCentre0 {
     display: none;
+}
+
+.modal__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.modal__row__left__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 363px;
+    margin-bottom: 30px;
+}
+.modal__row__left__card-text__title {
+    font-size: 32px;
+    font-weight: 700;
+}
+.modal__row__left__card-img {
+    width: 195px;
+}
+.modal__row__left__card-img img {
+    width: 100%;
+}
+.modal__row__left__card-text__desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.64px;
+}
+
+.modal__row__left__text__title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.modal__row__left__text__desc {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 35.22px;
+}
+.modal__row__right .form {
+    max-width: 430px;
+    padding: 5px 43px;
+}
+.modal-content .close {
+    position: relative;
+    top: -30px;
+    right: -30px;
+}
+.form__calltime {
+    margin-bottom: 30px;
+}
+#modal2 {
+    width: 1225px;
+    height: 760px;
 }

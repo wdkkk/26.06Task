@@ -68,16 +68,18 @@ const formInputs = document.querySelectorAll(".phone-mask");
 btns.forEach((btn) => {
   btn.onclick = function () {
     modal.style.display = "block";
+    document.body.style.overflow = "hidden";
   };
 });
-
 span.onclick = function () {
   modal.style.display = "none";
+  document.body.style.overflow = "auto";
 };
 
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    document.body.style.overflow = "auto";
   }
 };
 
@@ -92,6 +94,7 @@ $("#daySlider").slick();
 const startTimer = () => {
   var start = Date.now();
   const timer = 360;
+
   setInterval(function () {
     var delta = Date.now() - start; // milliseconds elapsed since start
     const currentTime = timer - Math.floor(delta / 1000); // in seconds

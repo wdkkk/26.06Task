@@ -305,7 +305,7 @@
                 </div>
             </div>
             <div class="best__button">
-                <button class="button">узнать о пакетах больше</button>
+                <button class="button" id="openModalBtn1">узнать о пакетах больше</button>
             </div>
         </div>
     </section>
@@ -1264,11 +1264,84 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <h2>Modal Title</h2>
-          <p>Modal Description</p>
+            
+          <div class="modal__row">
+            <div class="modal__row__left">
+                <div class="modal__row__left__card">
+                    <div class="modal__row__left__card-img">
+                        <img src="assets/Elena.png" alt="">
+                    </div>
+                    <div class="modal__row__left__card-text">
+                        <div class="modal__row__left__card-text__title">Елена</div>
+                        <div class="modal__row__left__card-text__desc">Менеджер проекта</div>
+                    </div>
+                </div>
+
+                <div class="modal__row__left__text">
+                    <div class="modal__row__left__text__title age__title">Введите ваш номер</div> 
+                    <div class="modal__row__left__text__desc age__title ">Наш специалист свяжется с вами в течение <br>
+                        рабочего дня или в удобное для вас время</div>
+                </div>
+            </div>
+
+            <div class="modal__row__right">
+                <div class="form">
+                    <div class="form__phone">
+                        <label for="phone">введите ваш номер телефона или e-mail</label>
+                        <input placeholder="+ 7 000 000 00 00" type="text" class="phone-mask" name="phone">
+                    </div>
+                    
+                    <p class="form__connect">выберите способ связи</p>
+
+                    <div class="radio-container">
+                        <input type="radio" selected="true" id="radio1" name="radio" />
+                        <label for="radio1">
+                            <img src="assets/whatsapp_symbol.svg" alt="Whatsapp Image">
+                            <span>Whatsapp</span>
+                        </label>
+                
+                        <input type="radio" id="radio2" name="radio" />
+                        <label for="radio2">
+                            <img src="assets/messageIcon.png" alt="e-mail Image">
+                            <span>e-mail</span>
+                        </label>
+                    </div>
+
+                    <p class="form__connect">выберите время звонка</p>
+                    <div class="form__calltime">
+                        <div class="form__calltime__variant selected">Сейчас</div>
+                        <div class="form__calltime__variant">По времени</div>
+                    </div>
+
+                    <div class="form__phone">
+                        <label for="phone">когда вам будет удобно принять звонок?</label>
+                        <input placeholder="Например, сегодня в 14:00" type="text" >
+                    </div>
+
+                    
+                    <div class="form__button">
+                        <button class="button">
+                            НАПИШИТЕ МНЕ
+                        </button>
+                    </div>
+                    <div class="form__agreement">
+                        <input type="checkbox" name="agreement">
+                        <label for="agreement">я принимаю условия передачи данных</label>
+                    </div>
+                </div>
+            </div>
+          </div>
+            
+
         </div>
     </div>
 
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+          <span class="close" id="close1">&times;</span>
+        </div>
+    </div>
+        
     <footer>
         <div class="container">
             <div class="header__left">
@@ -1284,6 +1357,14 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+
+        </div>
+    </div>
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
