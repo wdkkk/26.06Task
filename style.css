@@ -140,7 +140,25 @@ h1{
     border-radius: 10px;
     cursor: pointer;
 }
-.bg-white{
+.btn.nbtn {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.btn button {
+    padding: 20px 40px;
+    border: 1px solid #D9D9D9;
+    font-family: 'ProbaPro', 'Sans serif';
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bg-white button {
     background-color: white;
 }
 .pink{
@@ -1059,31 +1077,35 @@ h1{
 
 .set__info{
     display: flex;
-    align-items: start;
+    align-items: center;
     padding-top: 50px;
     justify-content: space-around;
     max-width: 1200px;
     margin: 0 auto;
 }
-.set__info img {
-    width: 62%;
-}
 .set .age__title,
 .cost .age__title {
     font-weight: 600;
 }
+.set__info__img img {
+    width: 100%;
+}
+.set__info__img {
+    width: 59%;
+}
 .set__word{
     background-color:#BD83E9;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
-    width: 380px;
-    margin: 20px;
+    width: 370px;
+    margin: 0 0 20px;
     font-size: 24px;
     height: 50px;
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 7px 0;
 }
 .set__criteries{
     display: flex;
@@ -1149,7 +1171,7 @@ h1{
 }
 
 .cost__info {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 .cost__info h3{
     font-size: 54px;
@@ -1393,6 +1415,7 @@ h1{
 .day__step:hover {
     background-color: #BD83E9;
     cursor: pointer;
+    color: #fff;
 }
 .adaptive .day__step {
     text-align: center;
@@ -1611,14 +1634,20 @@ h1{
 
 
 /* organization */
-.organization{
+.organization {
+    padding: 60px 0;
     text-align: center;
+    background-image: url('/assets/organizationBg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 95vw 100%;
 }
 
 .organization h2{
     font-size: 60px;
 }
 .organization h3{
+    margin-top: 0;
     font-size: 38px;
 }
 
@@ -1655,6 +1684,9 @@ h1{
 }
 .organization .button {
     height: 68px;
+}
+.organization .age__title {
+    margin-bottom: 30px;
 }
 .organization__cards .parallelepiped{
     background-color: #FFF2CC;
@@ -1717,6 +1749,7 @@ h1{
     font-size: 30px;
     font-weight: 500;
     line-height: 40px;
+    margin-bottom: 84px;
 }
 
 .news__img{
