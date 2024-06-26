@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teenager Card</title>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.mobile.css">
     <link rel="stylesheet" href="assets/fonts/probapro.css">
@@ -71,7 +74,7 @@
             </div>
             <div class="main__words-button flex">
                 <div class="main__button-container">
-                    <button id="openModalBtn" class="button">Получите расчет стоимости игрового комплекта в 2-X вариантах</button>
+                    <div id="openModalBtn" class="button">Получите расчет стоимости игрового комплекта в 2-X вариантах</div>
                     <div class="main__btn-gift"> +подарок</div>
                 </div>
                 <div class="main__words">
@@ -337,10 +340,13 @@
         </div>
 
         <div class="calculate__row">
-            <div class="container  show">
+            <div class="container show ">
             
                 <div class="calculate__test-container">
                     <div class="calculate__test">
+                        <div class="progressbar">
+                            <img src="assets/progressbar.png" alt="">
+                        </div>
                         <span class="calculate__question-left">осталось 5 вопросов из 5</span>
                         <h3 class="calculate__test-title">Сколько пакетов хотите заказать?</h3>
                         <div class="calculate__variants">
@@ -387,7 +393,10 @@
             <div class="container dnone">
                 <div class="flex">
                     <div class="calculate__test">
-                        <span class="calculate__question-left">осталось 4 вопросов из 5</span>
+                        <div class="progressbar">
+                            <img src="assets/progressbar2.png" alt="">
+                        </div>
+                        <span class="calculate__question-left">осталось 4 вопроса из 5</span>
                         <h3 class="calculate__test-title">
                             Когда планируете приобрести игровой комплект?
                         </h3>
@@ -436,7 +445,10 @@
             <div class="container dnone">
                 <div class="flex">
                     <div class="calculate__test">
-                        <span class="calculate__question-left">осталось 3 вопросов из 5</span>
+                        <div class="progressbar">
+                            <img src="assets/progressbar3.png" alt="">
+                        </div>
+                        <span class="calculate__question-left">осталось 3 вопроса из 5</span>
                         <h3 class="calculate__test-title">В какой бюджет хотите уложиться?</h3>
                         <div class="calculate__variants column">
                             <div class="variant">
@@ -482,10 +494,13 @@
             <div class="container dnone">
                 <div class="flex">
                     <div class="calculate__test">
-                        <span class="calculate__question-left">осталось 5 вопросов из 5</span>
+                        <div class="progressbar">
+                            <img src="assets/progressbar4.png" alt="">
+                        </div>
+                        <span class="calculate__question-left">осталось 2 вопроса из 5</span>
                         <h3 class="calculate__test-title">Сколько пакетов хотите заказать?</h3>
                         <div class="calculate__variants">
-                            <div>
+                            <div class="variant__ph">
                                 <div class=" variant variant__img">
                                     <div class="variant__icon">
                                         <img src="assets/CalculateIcon.svg" alt="">
@@ -498,7 +513,7 @@
                                     Брендированные номерки на столы
                                 </div>
                             </div>
-                            <div>
+                            <div class="variant__ph">
                                 <div class="variant variant__img">
                                     <div class="variant__icon">
                                         <img src="assets/CalculateIcon.svg" alt="">
@@ -511,7 +526,7 @@
                                     Фирменные школьные бейджи
                                 </div>
                             </div>
-                            <div>
+                            <div class="variant__ph">
                                 <div class="variant variant__img">
                                     <div class="variant__icon">
                                         <img src="assets/CalculateIcon.svg" alt="">
@@ -524,7 +539,7 @@
                                     Призы
                                 </div>
                             </div>
-                            <div>
+                            <div class="variant__ph">
                                 <div class="variant variant__img">
                                     <div class="variant__icon">
                                         <img src="assets/CalculateIcon.svg" alt="">
@@ -545,18 +560,22 @@
                    
                 </div>
             </div>
-            <div class="container dnone">
+            
+            <div class="container dnone ages">
                 <div class="flex">
                     <div class="calculate__test">
-                        <span class="calculate__question-left">осталось 5 вопросов из 5</span>
-                        <h3 class="calculate__test-title">Сколько пакетов хотите заказать?</h3>
-                        <div class="calculate__variants">
+                        <div class="progressbar">
+                            <img src="assets/progressbar5.png" alt="">
+                        </div>
+                        <span class="calculate__question-left">остался 1 вопрос из 5</span>
+                        <h3 class="calculate__test-title">Для какого возраста вам нужны игровые пакеты?</h3>
+                        <div class="calculate__variants column last">
                             <div class="variant">
                                 <div class="variant__icon">
                                     <img src="assets/CalculateIcon.svg" alt="">
                                 </div>
                                 <div class="variant__description">
-                                    5 и более игровых пакетов
+                                    5-12
                                 </div>
                             </div>
                             <div class="variant">
@@ -564,7 +583,7 @@
                                     <img src="assets/CalculateIcon.svg" alt="">
                                 </div>
                                 <div class="variant__description">
-                                    1 игровой пакет
+                                    16+
                                 </div>
                             </div>
                             <div class="variant">
@@ -572,7 +591,7 @@
                                     <img src="assets/CalculateIcon.svg" alt="">
                                 </div>
                                 <div class="variant__description">
-                                    3 - включенные в тариф стандарт
+                                   12-16
                                 </div>
                             </div>
                             <div class="variant">
@@ -580,7 +599,7 @@
                                     <img src="assets/CalculateIcon.svg" alt="">
                                 </div>
                                 <div class="variant__description">
-                                    5 - включенные в тариф премиум
+                                   25+
                                 </div>
                             </div>
                         </div>
@@ -591,54 +610,54 @@
                     
                 </div>
             </div>
-            <div class="container dnone">
+            
+            <div class="container organization__form form dnone">
+                <div class="form__phone">
+                    <label for="phone">введите ваш номер телефона или e-mail</label>
+                    <input placeholder="+ 7 000 000 00 00" type="text" class="phone-mask" name="phone">
+                </div>
+
+                <p class="form__connect">выберите способ связи</p>
+
+                    <div class="radio-container">
+                        <input type="radio" id="radio1" name="radio" />
+                        <label for="radio1">
+                            <img src="assets/whatsapp_symbol.svg" alt="Whatsapp Image">
+                            <span>Whatsapp</span>
+                        </label>
                 
-                <div class="flex">
-                    <div class="calculate__test">
-                        <span class="calculate__question-left">осталось 5 вопросов из 5</span>
-                        <h3 class="calculate__test-title">Сколько пакетов хотите заказать?</h3>
-                        <div class="calculate__variants">
-                            <div class="variant">
-                                <div class="variant__icon">
-                                    <img src="assets/CalculateIcon.svg" alt="">
-                                </div>
-                                <div class="variant__description">
-                                    5 и более игровых пакетов
-                                </div>
-                            </div>
-                            <div class="variant">
-                                <div class="variant__icon">
-                                    <img src="assets/CalculateIcon.svg" alt="">
-                                </div>
-                                <div class="variant__description">
-                                    1 игровой пакет
-                                </div>
-                            </div>
-                            <div class="variant">
-                                <div class="variant__icon">
-                                    <img src="assets/CalculateIcon.svg" alt="">
-                                </div>
-                                <div class="variant__description">
-                                    3 - включенные в тариф стандарт
-                                </div>
-                            </div>
-                            <div class="variant">
-                                <div class="variant__icon">
-                                    <img src="assets/CalculateIcon.svg" alt="">
-                                </div>
-                                <div class="variant__description">
-                                    5 - включенные в тариф премиум
-                                </div>
-                            </div>
-                        </div>
-                        <button id="next" class="button calculate__next">
-                            следующий шаг
-                        </button>
+                        <input type="radio" id="radio2" name="radio" />
+                        <label for="radio2">
+                            <img src="assets/messageIcon.png" alt="e-mail Image">
+                            <span>e-mail</span>
+                        </label>
                     </div>
-                    
+
+                <div class="form__button">
+                    <button class="button">
+                        получить точный расчет стоимости <br> + 2 подарка
+                    </button>
+                </div>
+
+                <div class="timer">
+                    <div class="timer__img">
+                        <img src="assets/podar.png" alt="">
+                    </div>
+                    <div class="timer__text">
+                        <div class="timer__text__top">
+                            Возможность <span>получить <br> подарок</span> исчезнет через
+                        </div>
+                        <div class="timer__text__time" id="timerTime">
+                            05 : 59
+                        </div>
+                    </div>
+                </div>
+                <div class="form__agreement">
+                    <input type="checkbox" name="agreement">
+                    <label for="agreement">я принимаю условия передачи данных</label>
                 </div>
             </div>
-    
+            
             <div class="calculate__human">
                 <img src="assets/Elena.png" alt="">
                 <p class="calculate__name">
@@ -676,6 +695,9 @@
                     <div class="set__word">
                         Отельная анимация
                     </div>
+                    <div class="set__word" id="shopCentre0">
+                        ТРЦ
+                    </div>
                     <div class="set__word">
                         Образовательные учреждения
                     </div>
@@ -685,7 +707,7 @@
                     <div class="set__word">
                         Центры развития
                     </div>
-                    <div class="set__word">
+                    <div class="set__word" id="shopCentre1">
                         Торгово-развлекательные центры
                     </div>
                     <div class="set__word">
@@ -709,7 +731,6 @@
                 </span>
             </h2>
             <div class="cost__box-container">
-                <img src="assets/box.png" alt="">
                 <div class="cost__knopki">
                     <div>
                         <img src="assets/sensor.png" alt="">
@@ -732,6 +753,8 @@
                         Дарим запасные<br/> батарейки АА (2 шт.)
                     </div>
                 </div>
+                <img id="costBox" src="assets/box.png" alt="">
+                
             </div>
             <div class="cost__info">
                 <h3>Дополнительно вы можете приобрести<br/>
@@ -813,20 +836,14 @@
                 </div>
                 <div class="tariffs__plus parallelepiped">
                     <h3>+ Дополнительные пакеты</h3>
-                    <p class="tariffs__card-description">Добавьте любой пакетб чтобы сделать темы игрболее  разгообразными</p>
+                    <p class="tariffs__card-description">Добавьте любой пакет, чтобы сделать темы игрболее  разгообразными</p>
                     <div class="tariffs__info-list">
                         <span>
                             <img src="assets/trueIcon.svg" alt="checked icon">
-                                <b>5</b> Сенсорных кнопок
+                                <b>-10%</b> 
                         </span>
-                        <span>
-                            <img src="assets/trueIcon.svg" alt="checked icon">
-                                <b>3</b> Игровых пакета
-                        </span>
-                        <span>
-                            <img src="assets/trueIcon.svg" alt="checked icon">
-                                <b>1</b> Электронный экран
-                        </span>
+                        
+                        <span class="desc">В момент покупки игрового комплекта действует скидка на доп пакеты</span>
                         <div class="tariffs__price">
                             <p><span>5 000</span> рублей</p>
                         </div>
@@ -845,10 +862,8 @@
         <div class="container">
             <h2>
                 <span class="day__title-big">Всего за 1 день:</span><br/>
-                <span class="day__title-medium">подберем игровые пакеты, подготовим комплект,</span><br/>
-                <span class="day__title-small">
-                    и организуем доставку в любой город России
-                </span>
+                <span class="day__title-medium">подберем игровые пакеты, подготовим комплект, <br/> и организуем доставку в любой город России</span>
+               
             </h2>
 
             <p class="day__description">
@@ -878,6 +893,34 @@
                 </div>
                 <div class="day__step">
                     <img src="assets/day4.png" alt="">
+                    <span>
+                        Доставка
+                    </span>
+                </div>
+            </div>
+            .<div class="day__steps adaptive" id="daySlider">
+                <div class="day__step">
+                    <div class="day__step__img"><img src="assets/day1.png" alt=""></div>
+                    <span>
+                        Согласование
+                        с менеджером
+                    </span>
+                </div>
+                <div class="day__step">
+                    <div class="day__step__img"><img src="assets/day2.png" alt=""></div>
+                    <span>
+                        Выбор
+                        игровых пакетов
+                    </span>
+                </div>
+                <div class="day__step">
+                    <div class="day__step__img"><img src="assets/day3.png" alt=""></div>
+                    <span>
+                        Оплата
+                    </span>
+                </div>
+                <div class="day__step">
+                    <div class="day__step__img"><img src="assets/day4.png" alt=""></div>
                     <span>
                         Доставка
                     </span>
@@ -915,7 +958,7 @@
                             <button class="button">получить консультацию менеджера</button>
                         </div>
                 </div>
-                    <img src="assets/dayPhoto.png" alt="">
+                    <img src="assets/dayPhoto.png"  id="dayPhone" alt="">
             </div>
             <div>
                 <button class="btn bg-white">выбрать игровые пакеты</button>
@@ -950,7 +993,7 @@
     </section>
     <section class="delivery">
         <div class="container">
-            <h2>
+            <h2 class="age__title">
                 Игровые комплекты будут доставлены <br/>
                 в отличном состоянии и точно в срок
             </h2>
@@ -1013,7 +1056,7 @@
     </section>
     <section class="pdf">
         <div class="container">
-            <h2>
+            <h2 class="age__title">
                 Получите PDF-презентацию<br/>
                 с полной информацией об игровом комплекте для<br/>
                  ваших мероприятий
@@ -1097,7 +1140,7 @@
     </section>
     <section class="organization">
         <div class="container">
-            <h2>
+            <h2 class="age__title">
                 Если вам нужна помощь в организации праздника,<br/>
                 мы сделаем это для вас!
             </h2>
@@ -1143,12 +1186,12 @@
                     </div>
                 </div>
             </div>
-            <p class="organization__price">Организация игры всего за <span class="old-price">120 000</span> 99 000 рублей!</p>
-            <p class="organization__amount">даже если вы планируете мероприятие на 100 человек</p>
+            <p class="organization__price age__title">Организация игры всего <br> за <span class="old-price">120 000</span> 99 000 рублей!</p>
+            <p class="organization__amount age__title">даже если вы планируете мероприятие на 100 человек</p>
             <div class="organization__cards">
                 <div class="parallelepiped">
                     <img src="assets/organizationfcard.png" alt="">
-                    <p>
+                    <p class="">
                         Организуем и<br/> проконтролируем<br/>
                         от А до Я
                     </p>
@@ -1172,7 +1215,7 @@
     <section class="news">
         <div class="container">
             <div class="news__content">
-                <h2>
+                <h2 class="age__title">
                     всероссийская онлайн-игра<br/>
                     для детей к 1 июня
                 </h2>
@@ -1231,6 +1274,10 @@
         </div>
     </footer>
 
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>    
     <script src="https://unpkg.com/imask"></script>
     <script src="index.js"></script>
 </body>

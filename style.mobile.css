@@ -1,4 +1,41 @@
 @media screen and (max-width: 1350px) {
+  .organization__iinfo-list-container {
+    width: 75%;
+    margin: 0 auto 100px;
+  }
+  .organization h3 {
+    text-align: center;
+  }
+  .organization__info {
+    flex-direction: column;
+  }
+  .pdf .age__title {
+    font-size: calc(15px + 44 * (100vw / 1280)) !important;
+  }
+  .pdf__info {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .delivery__card:nth-child(2) {
+    margin-top: 0;
+  }
+  .pdf__info-left {
+    margin-bottom: 115px;
+  }
+  .form {
+    margin: 0 auto;
+  }
+  .delivery__card {
+    height: 252px;
+    width: 390px;
+    margin: 0 auto 50px;
+  }
+  .delivery__cards {
+    flex-direction: column;
+  }
+  .cost__info-list {
+    width: 100%;
+  }
   .calculate__human {
     padding-top: 100px;
   }
@@ -41,20 +78,146 @@
     font-size: 58px;
     line-height: 54px;
   }
-  
+  .tariffs .age__title {
+    font-size: calc(11px + 30 * (100vw / 1280));
+  }
+  .organization__price.age__title {
+    font-size: calc(15px + 44 * (100vw / 1280)) !important;
+    line-height: calc(31px + 44 * (100vw / 1280)) !important;
+  }
+  .organization__amount.age__title {
+    font-size: calc(13px + 42 * (100vw / 1280)) !important;
+    line-height: calc(29px + 42 * (100vw / 1280)) !important;
+    margin-bottom: 35px;
+  }
   .age__title {
-    font-size: calc(18px + 44 * (100vw / 1280));
-    line-height: calc(35px + 44 * (100vw / 1280));
+    font-size: calc(18px + 44 * (100vw / 1280)) !important;
+    line-height: calc(35px + 44 * (100vw / 1280)) !important;
   }
   .age__description {
     font-size: calc(14px + 44 * (100vw / 1280));
     line-height: calc(23px + 44 * (100vw / 1280));
   }
+  .day h2 {
+    font-size: calc(13px + 35 * (100vw / 1280));
+    margin-bottom: 50px;
+  }
+  .day__description {
+    font-size: calc(10px + 32 * (100vw / 1280)); 
+  }
+  .tariffs {
+    margin-bottom: 100px;
+  }
+  .day__steps {
+    display: none;
+  }
+  .day__steps.adaptive {
+    display: block;
+  }
+  
+  .day__step span {
+    text-align: center !important;
+  }
 }
 
 @media screen and (max-width: 1240px) {
+  .news__img img {width: 100%;}
+  .news__img {
+    width: 40%;
+    margin: 0 auto;
+    left: 0;
+  }
+  .news__form {
+    margin-bottom: 280px;
+  }
+  .organization__cards {
+    flex-direction: column;
+  }
+
+  .organization__cards .parallelepiped {
+    margin-bottom: 50px;
+    width: 90%;
+    text-align: left;
+  }
+  #dayPhone {
+    display: none;
+  }
+  .tariffs .button {
+    margin-top: 0;
+  }
+  .tariffs__cards {
+    flex-direction: column;
+  }
+  .tariffs__cards .parallelepiped  {
+    width: 60%;
+    margin-bottom: 100px;
+  }
+  .tariffs__plus {
+    margin-bottom: 0;
+  }
+  .cost__knopki, 
+  .cost__planshet,
+  .cost__batareiki {
+    position: static;
+  }
+  .cost__box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cost__knopki, 
+  .cost__planshet {
+    width: 40%;
+    margin-bottom: 75px;
+  }
+  .cost__batareiki  {
+    width: 80%;
+    margin: 0 auto 50px auto;
+  }
+  #costBox {
+    width: 276px;
+    margin: 0 auto;
+  }
+  .set__info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .set__info img {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .set__criteries {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
   .calculate__info {
     flex-direction: column;
+  }
+  #shopCentre0 {
+    display: flex;
+  }
+  #shopCentre1 {
+    display: none;
+  }
+  .set__word:nth-child(1) {
+    width: 65%;
+  }
+  .set__word:nth-child(2) {
+    width: 15%;
+  }
+  .set__word:nth-child(3) {
+    width: 45%;
+  }
+  .set__word:nth-child(4) {
+    width: 37%;
+  }
+  .set__word:nth-child(5) {
+    width: 37%;
+  }
+  .set__word:nth-child(7) {
+    width: 45%;
   }
   .calculate__gift {
     margin: 60px 0 40px 0;
@@ -64,7 +227,10 @@
     margin-bottom: 30px;
   }
   .main__words-button {
-    align-items: flex-end;
+    align-items: center;
+  }
+  .main .button {
+    max-width: 615px !important;
   }
   .main__card {
     display: none;
@@ -76,8 +242,11 @@
     flex-direction: column;
   }
   .main__button-container .button {
-    max-width: 100%;
     padding: 40px 68px;
+  }
+  .main__btn-gift {
+    bottom: -40px;
+    right: 25px;
   }
   .main__info-list span {
     align-items: normal;
@@ -91,6 +260,16 @@
 }
 
 @media screen and (max-width: 1150px) {
+  .main__btn-gift {
+    bottom: -20px;
+    right: 25px;
+  }
+  #costBox {
+    margin-bottom: 60px;
+  }
+  .cost__info h3 {
+    font-size: calc(13px + 23 * (100vw / 1280)); 
+  }
   .calculate__test {
     width: 100%;
   }
@@ -174,6 +353,22 @@
 }
 
 @media screen and (max-width: 825px) {
+  .news__img {
+    width: 100%;
+  }
+  .form {
+    padding: 52px 20px;
+  }
+  .delivery h2 {
+    padding: 70px 0 80px 0;
+  }
+  .delivery__box {
+    width: 300px;
+  }
+  .set__word {
+    margin: 12px 0;
+    font-size: 18px;
+  }
   .best__title {
     font-size: calc(42px + 18 * (100vw / 1280)); 
   }
@@ -203,7 +398,7 @@
   .age__card {
     height: 120px !important;
   } 
-  .parallelepiped {
+  .age__card .parallelepiped {
     padding-left: 5px !important;
     justify-content: flex-start !important;
   }
@@ -216,6 +411,52 @@
 }
 
 @media screen and (max-width: 730px) {
+  footer .container {
+    flex-direction: column;
+  }
+  .header__left,
+  .header__whatsapp {
+    margin: 0 auto;
+    width: 100% !important;
+  }
+  .header__left {
+    margin-bottom: 50px;
+  }
+  .news__description {
+    font-size: 24px;
+  }
+  .form {
+    width: auto;
+  }
+  .pdf__info-list span {
+    font-size: 22px;
+    gap: 10px;
+  }
+  .pdf__info-list img {
+    width: 20px;
+  }
+  .pdf__info-list {
+    padding-left: 0;
+  }
+  .pdf__info-left h3 {
+    font-size: calc(20px + 18 * (100vw / 1280)); 
+  }
+  .day__info h3 {
+    font-size: 30px;
+  }
+  .day__info-list span {
+    gap: 13px;
+  }
+  .day__info-list {
+    font-size: 22px;
+    padding-left: 0;
+  }
+  .day__info-list span {
+    align-items: center;
+  }
+  .day__info-list img {
+    width: 22px;
+  }
   .calculate__test {
     height: 480px;
     width: 90%;
@@ -262,7 +503,33 @@
 } 
 
 @media screen and (max-width: 600px) {
-  
+  .tariffs__standard {
+    padding-bottom: 100px;
+  }
+  .tariffs__standard .tariffs__price {
+    bottom: -185px;
+  }
+  .tariffs__premium {
+    padding-bottom: 125px;
+  }
+  .tariffs__premium  .tariffs__price {
+    bottom: -215px;
+  }
+  .tariffs h3 {
+    font-size: 20px;
+  }
+  .tariffs__card-description {
+    font-size: 18px;
+  }
+  .tariffs__info-list span b {
+    font-size: 20px;
+  }
+  .tariffs__info-list span {
+    font-size: 18px;
+  }
+  .set__word {
+    font-size: 14px;
+  }
   .variant {
     width: 100% !important;
   }
@@ -306,6 +573,92 @@
 }
 
 @media screen and (max-width: 500px) {
+  .organization h3 {
+    font-size: 23px;
+  }
+  .delivery__card {
+    width: auto;
+  }
+  .delivery__card-title {
+    font-size: 25px !important;
+  }
+  .delivery__cards p {
+    font-size: 23px;
+  }
+  .form h3 {
+    font-size: 37px;
+  }
+  .day__info h3 {
+    font-size: 26px;
+  }
+  .form__description {
+    font-size: 22px;
+  }
+  .form .button {
+    font-size: 17px;
+  }
+  .day__info .button {
+    font-size: 14px;
+    height: 69px;
+  }
+  .day .btn {
+    font-size: 20px;
+  }
+  .day__info-list {
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+  .day__step {
+    font-size: 20px;
+  }
+  .tariffs__info-list span {
+    gap: 10px;
+  }
+  .tariffs__info-list span b {
+    margin-right: 0;
+    font-size: 17px;
+  }
+  .tariffs__info-list span {
+    font-size: 16px;
+  }
+  
+  .cost .button,
+  .tariffs .button {
+    font-size: 18px;
+  }
+  .cost__info-list {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .cost__info-list span {
+    gap: 8px;
+  }
+  .cost__knopki, 
+  .cost__planshet,
+  .cost__batareiki {
+    font-size: 16px;
+  }
+  .cost__knopki, 
+  .cost__planshet {
+    width: 50%;
+  }
+  .cost__batareiki img {
+    width: 95px;
+  }
+  .cost__planshet div {
+    height: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .set button {
+    margin: 55px auto;
+    font-size: 12px;
+    height: 60px;
+  }
+  .set__word {
+    font-size: 11px;
+  }
   .calculate__info .parallelepiped,
   .calculate__checklist .parallelepiped {
     width: 275px !important;
@@ -405,6 +758,9 @@
 }
 
 @media screen and (max-width: 400px) {
+  .day__info-list {
+    font-size: 15px;
+  }
   .main__words .parallelepiped span {
     font-size: 12px;
     padding: 15px 6px 20px 10px;
