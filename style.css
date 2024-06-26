@@ -497,7 +497,7 @@ h1{
 .main__btn-gift{
     position: absolute;
     bottom: -16px;
-    right: -119px;
+    right: 15px;
     border-radius: 5px;
     padding: 5px;
     font-family: 'ProbaPro';
