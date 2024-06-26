@@ -121,6 +121,14 @@
 }
 
 @media screen and (max-width: 1240px) {
+  .main__word__img {
+    display: block;
+    user-select: none;
+    pointer-events: none;
+  }
+  .main__words {
+    display: none;
+  }
   .news__img img {width: 100%;}
   .news__img {
     width: 40%;

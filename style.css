@@ -1262,6 +1262,12 @@ h1{
     font-style: italic;
     font-weight: bold;
 }
+.main__word__img {
+    display: none;
+}
+.main__word__img img {
+    width: 100%;
+}
 .tariffs__standard{
     background-color: #e1c9f2;
     border-radius: 7px;
