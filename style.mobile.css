@@ -693,10 +693,11 @@
     line-height: 18px;
   }
   .best__card {
-    width: 150px;
+    width: 140px;
   }
   .best__packages {
-    width: 310px;
+    width: 320px;
+    justify-content: space-between;
   }
   .age__card {
     width: 80vw !important;
