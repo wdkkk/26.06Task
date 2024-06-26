@@ -1268,6 +1268,9 @@ h1{
 .main__word__img img {
     width: 100%;
 }
+.main__button-container__img {
+    display: none;
+}
 .tariffs__standard{
     background-color: #e1c9f2;
     border-radius: 7px;

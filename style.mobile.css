@@ -121,12 +121,19 @@
 }
 
 @media screen and (max-width: 1240px) {
-  .main__word__img {
+  .main__button-container__img {
     display: block;
-    user-select: none;
-    pointer-events: none;
+    height: 100%;
+    cursor: pointer;
+    
   }
-  .main__words {
+
+  .main__word__img {
+    display: inline;
+  }
+  .main__words,
+  .main__button-container button,
+  .main__btn-gift {
     display: none;
   }
   .news__img img {width: 100%;}
