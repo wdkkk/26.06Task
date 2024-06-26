@@ -102,6 +102,8 @@ const startTimer = () => {
     else var str = `0${minutes} : 0${seconds}`;
 
     const element = document.getElementById("timerTime");
-    element.innerHTML = str;
+
+    if (seconds <= 0 && minutes <= 0) element.innerHTML = `00 : 00`;
+    else element.innerHTML = str;
   }, 1000);
 };
