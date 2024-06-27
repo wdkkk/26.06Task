@@ -1866,6 +1866,9 @@ footer .header__whatsapp-phone {
 .form__calltime {
     margin-bottom: 30px;
 }
+#myModal {
+    z-index: 1000000000000;
+}
 #myModal .modal-content {
     background-image: url('assets/modal1bg.png');
     background-repeat: no-repeat;
@@ -1989,5 +1992,63 @@ footer .header__whatsapp-phone {
 }
 #modal5 .modal-content {
     background-color: #fff;
-    display: block;
+    background-image: url('assets/modal5bg.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+.news .form__phone label {
+    text-align: left;
+    width: 85%;
+    margin: 0 auto;
+}
+
+#modal5 .modal__title {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    
+}
+#modal5 .modal__subtitle {
+    font-size: 24px;
+    line-height: 30.19px;
+    margin-bottom: 35px;
+}
+#modal5 .modal__subtitle span {
+    color: #BD83E9;    
+}
+.modal__merch__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.modal__merch__row-el {
+    width: 269px;
+    margin-bottom: 35px;
+}
+.modal__merch__row-el__img {
+}
+.modal__merch__row-el__desc {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.38px;
+    text-align: center;
+    height: 60px;
+}
+.modal__merch__row-el__desc span {
+    color: #BD83E9   ;
+}
+#modal5 .button {
+    width: 282px;
+    height: 70px;
+}
+
+.modal-content__text {
+    width: 563px;
+}
+.modal__merch__button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    
 }

@@ -124,3 +124,8 @@ document.getElementById("openModalBtn1").onclick = () => {
   document.getElementById("modal2").style.display = "block";
   document.body.style.overflow = "hidden";
 };
+
+document.getElementById("openModalBtn5").onclick = () => {
+  document.getElementById("modal5").style.display = "block";
+  document.body.style.overflow = "hidden";
+};
