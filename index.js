@@ -61,8 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const modal = document.getElementById("myModal");
+const modals = document.querySelectorAll(".modal");
 const btns = document.querySelectorAll("#openModalBtn");
-const span = document.getElementsByClassName("close")[0];
+const spans = document.querySelectorAll(".close");
 const formInputs = document.querySelectorAll(".phone-mask");
 
 btns.forEach((btn) => {
@@ -71,16 +72,20 @@ btns.forEach((btn) => {
     document.body.style.overflow = "hidden";
   };
 });
-span.onclick = function () {
-  modal.style.display = "none";
-  document.body.style.overflow = "auto";
-};
+spans.forEach((span) => {
+  span.onclick = function () {
+    modals.forEach((mdl) => (mdl.style.display = "none"));
+    document.body.style.overflow = "auto";
+  };
+});
 
 window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    document.body.style.overflow = "auto";
-  }
+  modals.forEach((mdl) => {
+    if (event.target == mdl) {
+      mdl.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
 };
 
 formInputs.forEach((input) => {
@@ -109,4 +114,13 @@ const startTimer = () => {
     if (seconds <= 0 && minutes <= 0) element.innerHTML = `00 : 00`;
     else element.innerHTML = str;
   }, 1000);
+};
+
+document.getElementById("openReviewModalBtn").onclick = () => {
+  document.getElementById("modal4").style.display = "block";
+  document.body.style.overflow = "hidden";
+};
+document.getElementById("openModalBtn1").onclick = () => {
+  document.getElementById("modal2").style.display = "block";
+  document.body.style.overflow = "hidden";
 };

@@ -1866,7 +1866,128 @@ footer .header__whatsapp-phone {
 .form__calltime {
     margin-bottom: 30px;
 }
-#modal2 {
+#myModal .modal-content {
+    background-image: url('assets/modal1bg.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+#modal2 .modal-content {
     width: 1225px;
     height: 760px;
+    background-color: #fff;
+
+    background-image: url('assets/modal2bg.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+#modal4 .modal-content {
+    background-color: #fff;
+}
+#modal3 .modal-content {
+    width: 1073px;
+}
+#modal3 .form__phone input {
+    width: 470px;
+}
+#modal3 .form {
+    max-width: 550px;
+}
+#modal3 .form__phone label {
+    text-align: left;
+}
+#modal3 button {
+    font-size: 22px;
+}
+#modal3 .modal__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal__info__left-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal__info__tariffs-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.modal__info__tariffs__variant {
+    width: 226px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #BD83E980;
+
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.modal__info__tariffs__variant.selected {
+    background-color: #BD83E9;
+}
+
+.modal__info {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 70px;
+
+}
+
+.organization__form__title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.modal__row__left__title {
+    font-size: 24px;
+    font-weight: 400;
+}
+.modal__row__left__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.13px;
+    color: #AFAFAF;
+    margin-bottom: 20px;
+}
+
+.modal__row__left__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.64px;
+    margin-bottom: 60px;
+}
+.modal__row__left {
+    width: 508px;
+}
+#modal4 .modal__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal4 .btn.nbtn {
+    margin: 0;
+}
+#modal4 .modal-content {
+    margin: 7% auto;
+}
+#modal2 .modal__row__left {
+    width: 100%;
+}
+#modal2 .form {
+    padding: 40px 43px;
+}
+#modal4 span {
+    font-weight: 700;
+}
+#modal5 .modal-content {
+    background-color: #fff;
+    display: block;
 }

@@ -67,7 +67,7 @@
                         детских игр мы получили <b>более 500 отзывов</b><br/>
                         от корпоративных клиентов, родителей и учителей
                     </p>
-                    <a id="openModalBtn" href="#comments">читать отзывы</a>
+                    <a id="openReviewModalBtn" href="#comments">читать отзывы</a>
                     <img src="assets/main-comments.png" alt="social">
                 </div>
                 
@@ -965,7 +965,7 @@
                             </span>
                         </div>
                         <div>
-                            <button class="button">получить консультацию менеджера</button>
+                            <button id="openModalBtn" class="button">получить консультацию менеджера</button>
                         </div>
                 </div>
                     <img src="assets/dayPhoto.png"  id="dayPhone" alt="">
@@ -998,7 +998,7 @@
                 <img src="assets/player.png" alt="">
             </div>
             <div class="instruction__button">
-                <button class="button">Заказать комплект и получить чек-лист в подарок!</button>
+                <button class="button" id="openModalBtn">Заказать комплект и получить чек-лист в подарок!</button>
             </div>
         </div>
     </section>
@@ -1342,6 +1342,8 @@
         </div>
     </div>
         
+    
+
     <footer>
         <div class="container">
             <div class="header__left">
@@ -1362,6 +1364,125 @@
         <div class="modal-content">
             <span class="close">&times;</span>
 
+            <div class="modal__row__left">
+                <div class="modal__row__left__text">
+                    <div class="modal__row__left__text__title age__title">Хотите узнать об игровых пакетах больше?</div> 
+                    <div class="modal__row__left__text__desc age__title ">Готовы предоставить вам полный список <br>
+                        - Наш менеджер расскажет о каждом подробно и ответит на интересующие вас вопросы</div>
+                </div>
+            </div>
+
+            <div class="modal__info">
+                <div class="organization__form form">
+                    <div class="organization__form__title">Укажите ваш номер - мы отправим <br>
+                        вам информацию о комплектах </div>
+                    <div class="form__phone">
+                        <label for="phone">введите ваш номер телефона или e-mail</label>
+                        <input placeholder="+ 7 000 000 00 00" type="text" class="phone-mask" name="phone">
+                    </div>
+                    <div class="form__button">
+                        <button class="button">
+                            Получить информцию
+                        </button>
+                    </div>
+                    <div class="form__agreement">
+                        <input type="checkbox" name="agreement">
+                        <label for="agreement">я принимаю условия передачи данных</label>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="modal__row__left">
+                <div class="modal__row__left__text">
+                    <div class="modal__row__left__text__title age__title">Выберите интересующий тариф,</div> 
+                    <div class="modal__row__left__text__desc age__title ">и наш специалист проконсультирует вас и пришлет необходимую информацию</div>
+                </div>
+            </div>
+
+
+            <div class="modal__info">
+                <div class="modal__info__left-img">
+                    <img src="assets/tariffsprize.png" alt="">
+                </div>
+
+                <div class="organization__form form">
+                    <div class="organization__form__title">Какой тариф вас интересует?</div> 
+                    <div class="modal__info__tariffs-row">
+                        <div class="modal__info__tariffs__variant selected">Премиум</div>
+                        <div class="modal__info__tariffs__variant">Стандарт</div>
+                    </div>
+                    <div class="form__phone">
+                        <label for="phone">введите ваш номер телефона или e-mail</label>
+                        <input placeholder="+ 7 000 000 00 00" type="text" class="phone-mask" name="phone">
+                    </div>
+                    <div class="form__button">
+                        <button class="button">
+                            Получить информацию и подарки
+                        </button>
+                    </div>
+                    <div class="form__agreement">
+                        <input type="checkbox" name="agreement">
+                        <label for="agreement">я принимаю условия передачи данных</label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="modal__row">
+                <div class="modal__row__left">
+                    <div class="modal__row__left__title mother-title">
+                        Анна Евграфова:
+                    </div>
+                    <div class="modal__row__left__subtitle mother-subtitle">мама Лизы   </div>
+
+                    <div class="modal__row__left__text mother-text">
+                        “Спасибо за организацию такого необычного и крутого Дня Рождения!  <br>
+                        <br>
+                        Дети и родители в полном восторге. Современных подростков сложно удивить, <span>но игра с кнопочкой понравилась всем!</span> <br>
+                        Мы получили море положительных эмоций - атмосфера во время игры была просто супер! <br>
+                        <br>
+                        <span>Детям было очень весело и интересно</span>, они вошли в азарт и два часа пролетели в момент. Все друзья ребенка теперь хотят себе такой день рождения! 
+                        <br>
+                        <br>
+                        <span>Идея с игровым набором - просто бомба!”</span>  <br>                      
+                    </div>
+                    
+                    <div  class="btn bg-white nbtn">
+                        <button>выбрать игровые пакеты</button>
+                        <img src="assets/arrowButton.png" alt="">
+                    </div>
+                </div>
+                <div class="modal__row__right">
+                    <img src="assets/motherModalBg.png" alt="">
+                </div>
+            </div>
+
+            
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="modal5">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="modal__title">Наш мерч и призы</div>           
+            </div>
 
         </div>
     </div>
