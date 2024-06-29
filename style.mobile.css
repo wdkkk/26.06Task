@@ -1,4 +1,14 @@
+
 @media screen and (max-width: 1350px) {
+  #modal3 .modal-content {
+    width: 95%;
+  }
+  #modal2 {
+    overflow-y: auto;
+  }
+  #modal2 .modal-content {
+    width: 90%;
+  }
   .organization__iinfo-list-container {
     width: 75%;
     margin: 0 auto 100px;
@@ -120,19 +130,159 @@
   }
 }
 
-@media screen and (max-width: 1240px) {
-  .main__button-container__img {
-    display: block;
-    height: 100%;
-    cursor: pointer;
-    
+@media screen and (max-height: 900px) {
+  .modal__row__right {
+    width: 50%;
+  }
+  .modal__row__right .form {
+    width: 360px;
+  }
+  .modal__row__right .form__calltime {
+    margin-bottom: 0;
+  }
+  .modal__row__right .form__phone {
+    margin: 15px 0 ;
+  }
+  .modal__row__right img {
+    width: 100%;
+  }
+  .radio-container {
+    margin: 0 auto 15px auto;
+  }
+  .modal__row__right .radio-container label {
+    height: 60px;
+  }
+  .modal-content .form__phone input {
+    padding: 15px 38px;
+  }
+  .modal__row__right .radio-container img {
+    height: 30px;
+    width: 30px;
+  }
+  .modal__row__left__text {
+    margin-bottom: 15px;
+  }
+  .modal__row__right .form .button {
+    font-size: 14px;
+    padding: 11px 30px;
+  }
+  .modal__row__left {
+    width: 50%;
+  }
+  #myModal .modal-content .close {
+    position: relative;
+    top: -15px;
+    right: -43px;
+  }
+  #myModal .modal-content {
+    padding: 17px 65px;
+  }
+  #modal4 .modal-content {
+    margin: 4% auto;
+  }
+  #modal4 .modal__row__left,
+  #myModal .modal__row__left,
+  #modal7 .modal__row__left {
+    width: 40%; 
+  }
+  #modal4 .btn button {
+    font-size: 20px;
+  }
+  #modal2 .form {
+    margin: 0;
+    padding: 25px 40px 0;
+  }
+  #modal2 .modal-content {
+    margin: 1% auto;
+    height: 700px;
+    background-position: left bottom -145px;
+  }
+  #modal2 .modal__row__left__text {
+    margin-bottom: 10px;
   }
 
+  .modal__row__left__card-img {
+    width: 140px;
+  }
+  .modal__row__left__card {
+    width: 320px;
+  }
+  .modal__row__left__text__title {
+    font-size: calc(6px + 34 * (100vw / 1280)) !important ;
+    line-height: calc(10px + 36 * (100vw / 1280)) !important;
+  }
+  .modal__row__left__text__desc  {
+    font-size: calc(4px + 20 * (100vw / 1280)) !important ;
+    line-height: calc(4px + 30 * (100vw / 1280)) !important;
+  }
+  .organization__variants-row {
+    padding-top: 17px;
+  }
+  #modal5 .modal-content {
+    padding: 15px 25px;
+    background-position: right -150px center;
+  }
+  #modal5 .modal-content .close {
+    position: relative;
+    top: -13px;
+    right: -4px;
+  }
+  #modal8 .form {
+    margin: 0;
+  }
+  #modal8 .modal-content {
+    padding: 22px 45px 5px;
+    background-position: left bottom -100px;
+    margin: 1.5% auto;
+  }
+  .modal__merch__row-el {
+    margin-bottom: 12px;
+  }
+  .modal__merch__row-el__img img {
+    width: 100%;
+  }
+  .modal__merch__row-el__img {
+    width: 230px;
+  }
+  #modal8 .form {
+    padding: 13px 43px 0;
+  }
+  #modal8 .form__phone {
+    margin: 15px 0;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+  
+  #modal2 .modal-content {
+    height: 640px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .age__pencil {
+    width: 100%;
+  }
+  .age__twelve,
+  .age__five,
+  .age__sixteen {
+    width: 90% !important;
+  }
+  .pdf {
+    padding-bottom: 100px;
+  }
+  .instruction__star {
+    display: none;
+  }
+  .main__button-container::after {
+    display: none;
+  }
   .main__word__img {
     display: inline;
   }
   .main__words,
-  .main__button-container button,
+  /* .main__button-container button, */
   .main__btn-gift {
     display: none;
   }
@@ -275,6 +425,117 @@
 }
 
 @media screen and (max-width: 1150px) {
+  #modal3, #modal7 {
+    overflow-y: auto;
+  }
+  #modal3 .modal__info {
+    flex-direction: column;
+  }
+  .modal__info__left-img {
+    display: none;
+  }
+  .modal__info__left-img.adaptive {
+    width: 186px;
+    margin: 0 auto 10px;
+    display: inline;
+  }
+  .modal__merch__row {
+    width: 270px;
+    margin: 0 auto;
+  }
+  .modal__merch__row-el__img {
+    width: 100%;
+  }
+  #modal5 .modal__title {
+    font-size: 24px;
+    text-align: center;
+  }
+  #modal5 {
+    overflow-y: auto;
+  }
+  .modal__merch__button-wrapper {
+    justify-content: center;
+  }
+  #modal5 .modal__subtitle {
+    font-size: 20px;
+    line-height: 25.16px;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+  .modal__merch__row {
+    flex-direction: column;
+  }
+  .modal-content__text {
+    width: 100%;
+  }
+  #modal5 .modal-content {
+    background-image: none;
+  }
+  .modal__row__left__text__title  {
+    text-align: center !important;
+    line-height: 26px !important;
+  }
+  #modal8 {
+    overflow-y: auto;
+  }
+  #myModal .modal-content {
+    padding: 50px 65px 20px;
+  }
+  .modal__info {
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+   
+  }
+
+  .modal__row__left__card {
+    width: 290px;
+    margin: 0 auto;
+  }
+  #myModal .modal-content {
+    background-position: center center;
+  }
+  #myModal .form {
+    margin: 0 auto;
+  }
+  .modal__row__right {
+    width: 100%;
+  }
+  .form__phone {
+    margin: 10px auto;
+  }
+  .form .button {
+    padding: 13px 40px;
+    font-size: 15px;
+  }
+  .form__calltime {
+    margin: 0;
+  }
+  .modal__row__left__card-img {
+    width: 125px;
+  }
+  .modal__row__left__text {
+    margin-bottom: 30px;
+  }
+  .modal__row__left__card-text {
+    text-align: center;
+  }
+  .modal__row {
+    width: 100%;
+    flex-direction: column;
+  }
+  .modal__row__left {
+    width: 100% !important;
+  }
+  .modal__row__left__text__title {
+    font-size: 24px !important;
+    text-align: center;
+  }
+  .modal__row__left__text__desc {
+    font-size: 20px !important;
+    line-height: 22px !important;
+    text-align: center;
+  }
   .main__btn-gift {
     bottom: -20px;
     right: 25px;
@@ -367,7 +628,71 @@
   }
 }
 
+@media screen and (max-height: 820px) and (orientation: portrate) {
+  .modal__row__left__text__title {
+    font-size: 21px !important;
+    text-align: center;
+  }
+  .modal__row__left__text__desc {
+    font-size: 15px !important;
+    line-height: 18px !important;
+    text-align: center;
+  }
+  .modal__row__left__text {
+    margin-bottom: 12px;
+  }
+} 
+
+@media screen and (max-height: 800px) and (orientation: portrate) {
+  .modal {
+    overflow-y: auto;
+  }
+} 
+
+
 @media screen and (max-width: 825px) {
+  #modal3 .form {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px 20px 10px;
+    box-sizing: border-box;
+  }
+  #modal3 .form__phone input {
+    width: 100%;
+  }
+  .modal__info__tariffs__variant {
+    width: 45%;
+    padding: 20px 10px;
+  }
+  #modal3 .phone-mask {
+    width: 283px !important;
+  }
+  #modal3 .modal-content {
+    padding: 25px;
+  }
+  #modal3 .modal-content .close {
+    top: -20px;
+    right: -5px;
+  }
+  #modal8 .modal-content {
+    padding: 22px;
+  }
+  #modal8 .close {
+    top: -23px;
+    right: -12px;
+  }
+  .organization__form__title {
+    font-size: 24px;
+    text-align: center;
+  }
+  .calculate__test .progressbar {
+    width: 90vw;
+    right: -20px;
+  }
+  .calculate__test .progressbar img {
+    width: 80%;
+    margin: 0 auto;
+  }
   .news__img {
     width: 100%;
   }
@@ -426,6 +751,63 @@
 }
 
 @media screen and (max-width: 730px) {
+  #modal7 .modal-content .form__phone input {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  .organization__variants__el:nth-child(6) {
+    display: none;
+  }
+  .organization__variants__el:nth-child(2) {
+    display: inline;
+  }
+  #modal2 .modal-content {
+    background-position: left bottom -200px;
+  }
+  #modal2 .organization__form__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  #modal2 .modal-content {
+    padding: 35px;
+  }
+  #modal2 .modal-content .close {
+    top: -35px;
+    right: -20px;
+  }
+  .modal-content .modal__row__right .form {
+    width: auto;
+  }
+  .age__card {
+    width: 395px;
+  }
+  .calculate__row .container .timer {
+    width: 100%;
+  }
+  .form .button {
+    padding: 12px 16px;
+  }
+  .timer__img {
+    width: 150px;
+    margin-bottom: 30px;
+    display: none;
+  }
+  .timer__text__top {
+    font-size: 23px;
+    line-height: 25px;
+  }
+  .timer__text__time {
+    font-size: 55px;
+  }
+  .calculate__row .form .button {
+    font-size: 16px;
+  }
+  .timer__img img {
+    width: 100%;
+  }
+  .calculate__row .container .timer {
+    flex-direction: column;
+  }
   footer .container {
     flex-direction: column;
   }
@@ -518,6 +900,26 @@
 } 
 
 @media screen and (max-width: 600px) {
+  #modal7 .modal-content {
+    padding: 15px 28px;
+  }
+  #modal7 .modal-content .close {
+    position: relative;
+    top: -16px;
+    right: -16px;
+  }
+  .modal__info__tariffs-row {
+    justify-content: space-around;
+  }
+  .modal__info__tariffs__variant {
+    padding: 10px 0;
+  }
+  .organization__variants__el  {
+    font-size: 9px;
+  }
+  .calculate__test .progressbar {
+    top: -9px;
+  }
   .tariffs__standard {
     padding-bottom: 100px;
   }
@@ -588,6 +990,112 @@
 }
 
 @media screen and (max-width: 500px) {
+  #modal3 .form__phone {
+    box-sizing: border-box;
+  }
+  .modal__merch__row,
+  .modal__merch__row-el {
+    width: 230px;
+  }
+  #modal5 .modal-content .close {
+    top: -30px;
+    right: -10px;
+  }
+  #modal5 .modal-content {
+    padding: 30px 25px;
+  }
+  .organization__form__title {
+    font-size: 16px;
+  }
+  #modal8 .form {
+    padding: 13px 10px;
+  }
+  .organization__variants__el  {
+    font-size: 8px;
+  }
+  #modal2 .modal__row__left__text__title {
+    font-size: 20px !important;
+    line-height: 20px !important;
+
+  }
+  #modal2 .modal__row__left__text__desc  {
+    font-size: 15px !important;
+    line-height: 16px !important;
+  }
+  #modal2 .organization__form__title {
+    font-size: 18px;
+    line-height: 19px;
+  }
+  #modal2 .form {
+    margin: 0;
+    padding: 11px 20px 0;
+  }
+  .modal__row__left__card {
+    display: none;
+  }
+  #myModal .modal-content {
+    padding: 20px;
+  }
+  #myModal .modal-content .close {
+    position: relative;
+    top: -23px;
+    right: -6px;
+  }
+  .modal__row__right .form__calltime {
+    width: 240px;
+    margin: 0 auto;
+  }
+  .form__calltime__variant,
+  .form__calltime__variant.selected {
+    padding: 10px;
+  }
+  .form__calltime {
+    height: 43px;
+  }
+  .modal-content .form__agreement {
+    font-size: 13px;
+  }
+  .modal__row__right .form {
+    padding: 5px;
+  }
+  .day button {
+    width: 100%;
+    font-size: 17px;
+    padding: 18px 40px;
+  }
+  #changeDayStep {
+    width: 100%;
+  }
+  #changeDayStep button {
+    min-width: 70%;
+    max-width: 80%;
+  }
+  #changeDayStep img {
+    width: 60px;
+    height: 60px;
+  }
+  .form__agreement {
+    width: 80%;
+  }
+  .form__phone input {
+    width: 64%; /* calculator */
+    font-size: 15px;
+    padding: 18px 20px;
+  }
+  .form__phone input::placeholder,
+  .form__phone label {
+    font-size: 15px;
+  }
+  .form .button {
+    padding: 12px 7px;
+    font-size: 14px !important;
+  }
+  .calculate__gift span {
+    font-size: 30px;
+  }
+  .calculate__test .progressbar {
+    right: -5px;
+  }
   .organization h3 {
     font-size: 23px;
   }
@@ -774,6 +1282,12 @@
 }
 
 @media screen and (max-width: 400px) {
+  #modal3 .modal__row__left__text__title {
+    font-size: 20px !important;
+  }
+  .organization__variants__el {
+    padding: 8px 3px
+  }
   .day__info-list {
     font-size: 15px;
   }

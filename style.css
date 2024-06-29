@@ -267,6 +267,7 @@ h1{
     border-radius: 8px;
     animation: slideDown 0.5s;
     z-index: 2000;
+    box-sizing: border-box;
   }
 
   @keyframes slideDown {
@@ -867,6 +868,9 @@ h1{
 .organization__form {
     border: 3px solid rgba(255, 207, 64, 1)
 }
+.organization__form.form {
+    padding: 0;
+}
 .calculate__row  .form .button {
     font-size: 20px;
 }
@@ -1446,6 +1450,7 @@ h1{
     font-size: 24px;
     width: 22%;
     transition: background-color 0.3s ease;
+    cursor: pointer;
 }
 .instruction .age__title {
     font-weight: 400;
@@ -1453,7 +1458,7 @@ h1{
 .instruction .age__big-title {
     font-weight: 700;
 }
-.day__step:hover {
+.day__step.selected {
     background-color: #BD83E9;
     cursor: pointer;
     color: #fff;
@@ -1869,10 +1874,16 @@ footer .header__whatsapp-phone {
 #myModal {
     z-index: 1000000000000;
 }
-#myModal .modal-content {
+#myModal .modal-content, 
+#modal6 .modal-content,
+#modal7 .modal-content {
     background-image: url('assets/modal1bg.png');
     background-repeat: no-repeat;
     background-position: left bottom;
+}
+#modal6 .modal__row__left, 
+#modal7 .modal__row__left {
+    width: 555px;
 }
 #modal2 .modal-content {
     width: 1225px;
@@ -1887,7 +1898,8 @@ footer .header__whatsapp-phone {
     background-color: #fff;
 }
 #modal3 .modal-content {
-    width: 1073px;
+    width: 1150px;
+    margin: 4% auto;
 }
 #modal3 .form__phone input {
     width: 470px;
@@ -1939,10 +1951,17 @@ footer .header__whatsapp-phone {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-top: 70px;
 
 }
-
+#modal2 .modal-content {
+    margin: 4% auto;
+}
+#modal3 .modal__row__left {
+    width: 100%;
+}
+#modal3 .form {
+    padding: 30px 40px 10px;
+}
 .organization__form__title {
     font-size: 28px;
     font-weight: 600;
@@ -2027,8 +2046,6 @@ footer .header__whatsapp-phone {
     width: 269px;
     margin-bottom: 35px;
 }
-.modal__merch__row-el__img {
-}
 .modal__merch__row-el__desc {
     font-size: 20px;
     font-weight: 500;
@@ -2051,4 +2068,75 @@ footer .header__whatsapp-phone {
     display: flex;
     justify-content: flex-end;
     
+}
+
+#modal8 .modal__row__left {
+    width: 100%;
+}
+#modal8 .modal__row__left__text__title {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60.91px;
+    text-align: left;    
+}
+#modal8 .modal__row__left__text__title span {
+    font-weight: 700;
+}
+.organization__variants-row {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.organization__variants__el {
+    font-weight: 500;
+    color: #fff;
+    padding: 14px 7px;
+    background: #BD83E980;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.organization__variants__el.selected {
+    background: #BD83E9;
+}
+
+#modal8 .form {
+    padding: 30px 43px;
+    max-width: 545px;
+}
+#modal8 .form__phone label {
+    text-align: left;
+}
+#modal8 .form__phone input {
+    margin: 0;
+}
+#modal8 .modal-content {
+    background-image: url('assets/modal8bg.png');
+    background-repeat: no-repeat;
+    background-position: left bottom 44px;
+}
+a.button {
+    color: #000;
+    text-decoration: none;
+}
+
+.calculate__row.final {
+    justify-content: flex-start;
+}
+#finalCalculateContainter.final {
+    margin: 0 !important;
+}
+.calculate.final {
+    background-image: url('assets/calculateBg.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+#modal8 .close {
+    position: relative;
+    top: -23px;
+    right: -30px;
+}
+.modal__info__left-img.adaptive {
+    display: none;
 }

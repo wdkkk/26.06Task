@@ -27,7 +27,7 @@
                 </div>
                 <div class="header__whatsapp">
                         <img src="assets/whatsapp_symbol.svg" alt="">
-                        <a href="tel:+79162722770" class="header__whatsapp-phone">8 916 272 27 70</a>
+                        <a href="tel:+79852088484" class="header__whatsapp-phone">8 916 272 27 70</a>
                 </div>
                 <div class="header__button">
                     <button>
@@ -309,8 +309,8 @@
             </div>
         </div>
     </section>
-    <section class="calculate">
-        <h2 class="calculate__title">
+    <section class="calculate" id="calculate">
+        <h2 class="calculate__title" id="calculateTitle">
             <span class="calculate__strong-title">
                 Рассчитайте за 1 минуту
             </span><br/>
@@ -347,7 +347,7 @@
 
         </div>
 
-        <div class="calculate__row">
+        <div class="calculate__row" id="calculateRow">
             <div class="container show ">
             
                 <div class="calculate__test-container">
@@ -358,7 +358,7 @@
                         <span class="calculate__question-left">осталось 5 вопросов из 5</span>
                         <h3 class="calculate__test-title">Сколько пакетов хотите заказать?</h3>
                         <div class="calculate__variants">
-                            <div class="variant">
+                            <div class="variant selected">
                                 <div class="variant__icon">
                                     <img src="assets/CalculateIcon.svg" alt="">
                                 </div>
@@ -410,7 +410,7 @@
                         </h3>
                     
                         <div class="calculate__variants column">
-                            <div class="variant">
+                            <div class="variant selected">
                                 <div class="variant__icon">
                                     <img src="assets/CalculateIcon.svg" alt="">
                                 </div>
@@ -459,7 +459,7 @@
                         <span class="calculate__question-left">осталось 3 вопроса из 5</span>
                         <h3 class="calculate__test-title">В какой бюджет хотите уложиться?</h3>
                         <div class="calculate__variants column">
-                            <div class="variant">
+                            <div class="variant selected">
                                 <div class="variant__icon">
                                     <img src="assets/CalculateIcon.svg" alt="">
                                 </div>
@@ -508,8 +508,8 @@
                         <span class="calculate__question-left">осталось 2 вопроса из 5</span>
                         <h3 class="calculate__test-title">Сколько пакетов хотите заказать?</h3>
                         <div class="calculate__variants">
-                            <div class="variant__ph">
-                                <div class=" variant variant__img">
+                            <div class="variant__ph ">
+                                <div class=" variant variant__img selected">
                                     <div class="variant__icon">
                                         <img src="assets/CalculateIcon.svg" alt="">
                                     </div>
@@ -578,7 +578,7 @@
                         <span class="calculate__question-left">остался 1 вопрос из 5</span>
                         <h3 class="calculate__test-title">Для какого возраста вам нужны игровые пакеты?</h3>
                         <div class="calculate__variants column last">
-                            <div class="variant">
+                            <div class="variant selected">
                                 <div class="variant__icon">
                                     <img src="assets/CalculateIcon.svg" alt="">
                                 </div>
@@ -619,7 +619,7 @@
                 </div>
             </div>
             
-            <div class="container organization__form form dnone">
+            <div class="container organization__form form dnone" id="finalCalculateContainter">
                 <div class="form__phone">
                     <label for="phone">введите ваш номер телефона или e-mail</label>
                     <input placeholder="+ 7 000 000 00 00" type="text" class="phone-mask" name="phone">
@@ -666,7 +666,7 @@
                 </div>
             </div>
             
-            <div class="calculate__human">
+            <div class="calculate__human" id="calculateHuman">
                 <img src="assets/Elena.png" alt="">
                 <p class="calculate__name">
                     Елена
@@ -726,7 +726,7 @@
                 </div>
             </div>
             <div class="set__button">
-                <button class="button">
+                <button class="button" id="openModalBtn8">
                     узнать о пакетах вашей категории больше
                 </button>
             </div>
@@ -861,7 +861,7 @@
                 </div>
             </div>
             <div>
-                <button class="button">
+                <button class="button" id="openModalBtn3">
                     выберите тариф<br/>
                     и получите подарок
                 </button>
@@ -881,34 +881,34 @@
             </p>
 
             <div class="day__steps">
-                <div class="day__step">
+                <div class="day__step selected computer">
                     <img src="assets/day1.png" alt="">
                     <span>
                         Согласование<br/>
                         с менеджером
                     </span>
                 </div>
-                <div class="day__step">
+                <div class="day__step computer">
                     <img src="assets/day2.png" alt="">
                     <span>
                         Выбор<br/>
                         игровых пакетов
                     </span>
                 </div>
-                <div class="day__step">
+                <div class="day__step computer">
                     <img src="assets/day3.png" alt="">
                     <span>
                         Оплата
                     </span>
                 </div>
-                <div class="day__step">
+                <div class="day__step computer">
                     <img src="assets/day4.png" alt="">
                     <span>
                         Доставка
                     </span>
                 </div>
             </div>
-            .<div class="day__steps adaptive" id="daySlider">
+            <div class="day__steps adaptive" id="daySlider">
                 <div class="day__step">
                     <div class="day__step__img"><img src="assets/day1.png" alt=""></div>
                     <span>
@@ -965,12 +965,12 @@
                             </span>
                         </div>
                         <div>
-                            <button id="openModalBtn" class="button">получить консультацию менеджера</button>
+                            <button id="openModalBtn6" class="button">получить консультацию менеджера</button>
                         </div>
                 </div>
                     <img src="assets/dayPhoto.png"  id="dayPhone" alt="">
             </div>
-            <div  class="btn bg-white nbtn">
+            <div  class="btn bg-white nbtn" id="changeDayStep">
                 <button>выбрать игровые пакеты</button>
                 <img src="assets/arrowButton.png" alt="">
             </div>
@@ -998,7 +998,7 @@
                 <img src="assets/player.png" alt="">
             </div>
             <div class="instruction__button">
-                <button class="button" id="openModalBtn">Заказать комплект и получить чек-лист в подарок!</button>
+                <button class="button" id="openModalBtn7">Заказать комплект и получить чек-лист в подарок!</button>
             </div>
         </div>
     </section>
@@ -1217,9 +1217,9 @@
                 </div>
             </div>
             <div>
-                <button class="button">
+                <a href="#calculate" class="button">
                     Оставить заявку
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -1355,7 +1355,8 @@
             </div>
             <div class="header__whatsapp">
                 <img src="assets/whatsapp_symbol.svg" alt="">
-                <a href="tel:+79162722770" class="header__whatsapp-phone">8 916 272 27 70</a>
+                
+                <a href="tel:+79852088484" class="header__whatsapp-phone">8 916 272 27 70</a>
             </div>
         </div>
     </footer>
@@ -1412,6 +1413,9 @@
                 <div class="modal__info__left-img">
                     <img src="assets/tariffsprize.png" alt="">
                 </div>
+                <div class="modal__info__left-img adaptive">
+                    <img src="assets/tariffsprizeAdaptive.png" alt="">
+                </div>
 
                 <div class="organization__form form">
                     <div class="organization__form__title">Какой тариф вас интересует?</div> 
@@ -1462,7 +1466,7 @@
                     </div>
                     
                     <div  class="btn bg-white nbtn">
-                        <button>выбрать игровые пакеты</button>
+                        <button>Смотреть следующий отзыв</button>
                         <img src="assets/arrowButton.png" alt="">
                     </div>
                 </div>
@@ -1532,7 +1536,203 @@
         </div>
     </div>
 
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            
+          <div class="modal__row">
+            <div class="modal__row__left">
+                <div class="modal__row__left__card">
+                    <div class="modal__row__left__card-img">
+                        <img src="assets/Elena.png" alt="">
+                    </div>
+                    <div class="modal__row__left__card-text">
+                        <div class="modal__row__left__card-text__title">Елена</div>
+                        <div class="modal__row__left__card-text__desc">Менеджер проекта</div>
+                    </div>
+                </div>
 
+                <div class="modal__row__left__text">
+                    <div class="modal__row__left__text__title age__title">Задайте вопрос напрямую</div> 
+                    <div class="modal__row__left__text__desc age__title ">Оставьте заявку, и Елена свяжется <br>
+                        с вами в течение одного рабочего дня <br> по указанным контактам</div>
+                </div>
+            </div>
+
+            <div class="modal__row__right">
+                <div class="form">
+                    <div class="form__phone">
+                        <label for="phone">введите ваш номер телефона или e-mail</label>
+                        <input placeholder="+ 7 000 000 00 00" type="text" class="phone-mask" name="phone">
+                    </div>
+                    
+                    <p class="form__connect">выберите способ связи</p>
+
+                    <div class="radio-container">
+                        <input type="radio" selected="true" id="radio1" name="radio" />
+                        <label for="radio1">
+                            <img src="assets/whatsapp_symbol.svg" alt="Whatsapp Image">
+                            <span>Whatsapp</span>
+                        </label>
+                
+                        <input type="radio" id="radio2" name="radio" />
+                        <label for="radio2">
+                            <img src="assets/messageIcon.png" alt="e-mail Image">
+                            <span>e-mail</span>
+                        </label>
+                    </div>
+
+                    <p class="form__connect">выберите время звонка</p>
+                    <div class="form__calltime">
+                        <div class="form__calltime__variant selected">Сейчас</div>
+                        <div class="form__calltime__variant">По времени</div>
+                    </div>
+
+                    <div class="form__phone">
+                        <label for="phone">когда вам будет удобно принять звонок?</label>
+                        <input placeholder="Например, сегодня в 14:00" type="text" >
+                    </div>
+
+                    
+                    <div class="form__button">
+                        <button class="button">
+                            НАПИШИТЕ МНЕ
+                        </button>
+                    </div>
+                    <div class="form__agreement">
+                        <input type="checkbox" name="agreement">
+                        <label for="agreement">я принимаю условия передачи данных</label>
+                    </div>
+                </div>
+            </div>
+          </div>
+            
+
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            
+          <div class="modal__row">
+            <div class="modal__row__left">
+                <div class="modal__row__left__card">
+                    <div class="modal__row__left__card-img">
+                        <img src="assets/Elena.png" alt="">
+                    </div>
+                    <div class="modal__row__left__card-text">
+                        <div class="modal__row__left__card-text__title">Елена</div>
+                        <div class="modal__row__left__card-text__desc">Менеджер проекта</div>
+                    </div>
+                </div>
+
+                <div class="modal__row__left__text">
+                    <div class="modal__row__left__text__title age__title">Введите ваш номер</div> 
+                    <div class="modal__row__left__text__desc age__title ">Наш специалист свяжется с вами в течение <br>
+                        рабочего дня или в удобное для вас время</div>
+                </div>
+            </div>
+
+            <div class="modal__row__right">
+                <div class="form">
+                    <div class="form__phone">
+                        <label for="phone">введите ваш номер телефона или e-mail</label>
+                        <input placeholder="+ 7 000 000 00 00" type="text" class="phone-mask" name="phone">
+                    </div>
+                    
+                    <p class="form__connect">выберите способ связи</p>
+
+                    <div class="radio-container">
+                        <input type="radio" selected="true" id="radio1" name="radio" />
+                        <label for="radio1">
+                            <img src="assets/whatsapp_symbol.svg" alt="Whatsapp Image">
+                            <span>Whatsapp</span>
+                        </label>
+                
+                        <input type="radio" id="radio2" name="radio" />
+                        <label for="radio2">
+                            <img src="assets/messageIcon.png" alt="e-mail Image">
+                            <span>e-mail</span>
+                        </label>
+                    </div>
+
+                    <p class="form__connect">выберите время звонка</p>
+                    <div class="form__calltime">
+                        <div class="form__calltime__variant selected">Сейчас</div>
+                        <div class="form__calltime__variant">По времени</div>
+                    </div>
+
+                    <div class="form__phone">
+                        <label for="phone">когда вам будет удобно принять звонок?</label>
+                        <input placeholder="Например, сегодня в 14:00" type="text" >
+                    </div>
+
+                    
+                    <div class="form__button">
+                        <button class="button">
+                            НАПИШИТЕ МНЕ
+                        </button>
+                    </div>
+                    <div class="form__agreement">
+                        <input type="checkbox" name="agreement">
+                        <label for="agreement">я принимаю условия передачи данных</label>
+                    </div>
+                </div>
+            </div>
+          </div>
+            
+
+        </div>
+    </div>
+
+    <div class="modal" id="modal8">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="modal__row__left">
+                <div class="modal__row__left__text">
+                    <div class="modal__row__left__text__title age__title">Хотите узнать больше о <span>пакетах <br>
+                         для вашей категории?</span></div> 
+                    <div class="modal__row__left__text__desc age__title ">Готовы предоставить вам полный список <br>
+                        - Наш менеджер расскажет о каждом подробно и ответит на интересующие вас вопросы</div>
+                </div>
+            </div>
+
+            <div class="modal__info">
+                <div class="organization__form form">
+                    <div class="organization__form__title">Для какой организации <br>
+                        направить информацию о комплектах? </div>
+
+                    <div class="organization__variants-row">
+                        <div class="organization__variants__el selected">Образовательные учреждения</div>
+                        <div class="organization__variants__el">ТРЦ</div>
+                        <div class="organization__variants__el">Эвент-агентства</div>
+                        <div class="organization__variants__el">Центры развития</div>
+                        <div class="organization__variants__el">Отели</div>
+                        <div class="organization__variants__el">Торгово-развлекательные центры</div>
+                        <div class="organization__variants__el">Корпоративные мероприятия</div>
+                    </div>
+                    <div class="form__phone">
+                        <label for="phone">введите ваш номер телефона или e-mail</label>
+                        <input placeholder="+ 7 000 000 00 00" type="text" class="phone-mask" name="phone">
+                    </div>
+                    <div class="form__button">
+                        <button class="button">
+                            Получить информцию
+                        </button>
+                    </div>
+                    <div class="form__agreement">
+                        <input type="checkbox" name="agreement">
+                        <label for="agreement">я принимаю условия передачи данных</label>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+    
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>    

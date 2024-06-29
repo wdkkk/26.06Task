@@ -49,7 +49,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
           currentIndex += 1;
 
-          if (currentIndex == containers.length - 1) startTimer();
+          if (currentIndex == containers.length - 1) {
+            startTimer();
+            document.getElementById(
+              "calculateTitle"
+            ).innerHTML = `Куда вам отправить <span class="calculate__strong-title">точный расчет <br>
+              стоимости и сроков?</span>`;
+            document.getElementById("calculateHuman").remove();
+
+            document
+              .getElementById("finalCalculateContainter")
+              .classList.add("final");
+
+            document.getElementById("calculateRow").classList.add("final");
+            document.getElementById("calculate").classList.add("final");
+          }
+
           containers[currentIndex].classList.remove("dnone");
           setTimeout(() => {
             containers[currentIndex].classList.add("show");
@@ -124,8 +139,69 @@ document.getElementById("openModalBtn1").onclick = () => {
   document.getElementById("modal2").style.display = "block";
   document.body.style.overflow = "hidden";
 };
-
+document.getElementById("openModalBtn3").onclick = () => {
+  document.getElementById("modal3").style.display = "block";
+  document.body.style.overflow = "hidden";
+};
 document.getElementById("openModalBtn5").onclick = () => {
   document.getElementById("modal5").style.display = "block";
   document.body.style.overflow = "hidden";
 };
+document.getElementById("openModalBtn6").onclick = () => {
+  document.getElementById("modal6").style.display = "block";
+  document.body.style.overflow = "hidden";
+};
+document.getElementById("openModalBtn7").onclick = () => {
+  document.getElementById("modal7").style.display = "block";
+  document.body.style.overflow = "hidden";
+};
+document.getElementById("openModalBtn8").onclick = () => {
+  document.getElementById("modal8").style.display = "block";
+  document.body.style.overflow = "hidden";
+};
+
+const daySteps = document.querySelectorAll(".day__step.computer");
+const dayStepButton = document.getElementById("changeDayStep");
+dayStepButton.onclick = () => {
+  for (let i = 0; i < daySteps.length; i++) {
+    if (daySteps[i].classList.contains("selected")) {
+      daySteps[i].classList.remove("selected");
+      const newIndex = i + 1;
+      const element = daySteps[newIndex];
+
+      if (i != daySteps.length - 1) {
+        element.classList.add("selected");
+        break;
+      } else {
+        daySteps[0].classList.add("selected");
+        break;
+      }
+    }
+  }
+};
+
+daySteps.forEach((step) => {
+  step.onclick = () => {
+    step.classList.add("selected");
+
+    daySteps.forEach((tempStep) => {
+      if (tempStep != step) tempStep.classList.remove("selected");
+    });
+  };
+});
+
+$(document).ready(function () {
+  $("a[href*='#']").on("click", function (e) {
+    var anchor = $(this);
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(anchor.attr("href")).offset().top,
+        },
+        777
+      );
+    e.preventDefault();
+    return false;
+  });
+});
