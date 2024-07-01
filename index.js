@@ -85,6 +85,8 @@ btns.forEach((btn) => {
   btn.onclick = function () {
     modal.style.display = "block";
     document.body.style.overflow = "hidden";
+
+    // document.getElementById("myModalPhone");
   };
 });
 spans.forEach((span) => {
@@ -205,3 +207,65 @@ $(document).ready(function () {
     return false;
   });
 });
+
+const radioLabels = document.querySelectorAll(".radioLabel");
+
+radioLabels.forEach((radioLabel) => {
+  radioLabel.onclick = () => {
+    const radioId = radioLabel.attributes["for"].nodeValue;
+    const radioButton = document.getElementById(radioId);
+
+    radioButton.checked = true;
+  };
+});
+
+const calltimeButtons = document.querySelectorAll(".form__calltime__variant");
+var callTime = "Сейчас";
+calltimeButtons.forEach((calltimeBtn) => {
+  calltimeBtn.onclick = () => {
+    calltimeBtn.parentElement.children.forEach((child) => {
+      if (child.classList.contains("form__caltime-radio")) {
+        child.children[0].checked = false;
+        child.children[1].checked = false;
+      }
+
+      child.classList.remove("selected");
+    });
+
+    calltimeBtn.classList.add("selected");
+    const calltimeRadioBtnId = calltimeBtn.id.split("button")[1].toLowerCase();
+
+    document.getElementById(calltimeRadioBtnId).checked = true;
+    callTime = calltimeBtn.innerHTML;
+  };
+});
+
+const myModalData = {
+  phone: "",
+  typeOfContact: "Whatsapp",
+  callTime: callTime,
+  comfortableTime: "",
+};
+document.getElementById("myModalPhone").addEventListener("input", (event) => {
+  myModalData.phone = event.target.value;
+});
+document.getElementById("myModalTime").addEventListener("input", (event) => {
+  myModalData.comfortableTime = event.target.value;
+});
+document
+  .getElementById("myModalRadioContainer")
+  .children[1].addEventListener("click", (event) => {
+    myModalData.typeOfContact = document.getElementById(
+      "myModalRadioContainer"
+    ).children[1].children[1].innerHTML;
+  });
+document
+  .getElementById("myModalRadioContainer")
+  .children[3].addEventListener("click", (event) => {
+    myModalData.typeOfContact = document.getElementById(
+      "myModalRadioContainer"
+    ).children[3].children[1].innerHTML;
+  });
+
+document.getElementById("myModalButton").onclick = () =>
+  console.log(myModalData);

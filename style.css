@@ -1929,12 +1929,13 @@ footer .header__whatsapp-phone {
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    border:0;
 }
 .modal__info__tariffs__variant {
-    width: 226px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #BD83E980;
+    width: 226px !important; 
+    padding: 20px !important;
+    border-radius: 10px !important;
+    background-color: #BD83E980 ;
 
     color: #fff;
     text-align: center;
@@ -2140,3 +2141,4 @@ a.button {
 .modal__info__left-img.adaptive {
     display: none;
 }
+.form__caltime-radio {display: none;}

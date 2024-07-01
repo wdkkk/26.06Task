@@ -628,14 +628,14 @@
                 <p class="form__connect">выберите способ связи</p>
 
                     <div class="radio-container">
-                        <input type="radio" id="radio1" name="radio" />
-                        <label for="radio1">
+                        <input type="radio" id="radio9" name="radio" />
+                        <label for="radio9" class="radioLabel">
                             <img src="assets/whatsapp_symbol.svg" alt="Whatsapp Image">
                             <span>Whatsapp</span>
                         </label>
                 
-                        <input type="radio" id="radio2" name="radio" />
-                        <label for="radio2">
+                        <input type="radio" id="radio10" name="radio" />
+                        <label for="radio10" class="radioLabel">
                             <img src="assets/messageIcon.png" alt="e-mail Image">
                             <span>e-mail</span>
                         </label>
@@ -1109,14 +1109,14 @@
                     <p class="form__connect">выберите способ связи</p>
 
                     <div class="radio-container">
-                        <input type="radio" id="radio1" name="radio" />
-                        <label for="radio1">
+                        <input type="radio" id="radio11" name="radio" />
+                        <label for="radio11" class="radioLabel">
                             <img src="assets/whatsapp_symbol.svg" alt="Whatsapp Image">
                             <span>Whatsapp</span>
                         </label>
                 
-                        <input type="radio" id="radio2" name="radio" />
-                        <label for="radio2">
+                        <input type="radio" id="radio12" name="radio" />
+                        <label for="radio12" class="radioLabel">
                             <img src="assets/messageIcon.png" alt="e-mail Image">
                             <span>e-mail</span>
                         </label>
@@ -1288,20 +1288,20 @@
                 <div class="form">
                     <div class="form__phone">
                         <label for="phone">введите ваш номер телефона или e-mail</label>
-                        <input placeholder="+ 7 000 000 00 00" type="text" class="phone-mask" name="phone">
+                        <input placeholder="+ 7 000 000 00 00" type="text" class="phone-mask" id="myModalPhone" name="phone">
                     </div>
                     
                     <p class="form__connect">выберите способ связи</p>
 
-                    <div class="radio-container">
-                        <input type="radio" selected="true" id="radio1" name="radio" />
-                        <label for="radio1">
+                    <div class="radio-container" id="myModalRadioContainer">
+                        <input type="radio" selected="true" id="radio3" name="radio" />
+                        <label for="radio3" class="radioLabel"> 
                             <img src="assets/whatsapp_symbol.svg" alt="Whatsapp Image">
                             <span>Whatsapp</span>
                         </label>
                 
-                        <input type="radio" id="radio2" name="radio" />
-                        <label for="radio2">
+                        <input type="radio" id="radio4" name="radio" />
+                        <label for="radio4" class="radioLabel">
                             <img src="assets/messageIcon.png" alt="e-mail Image">
                             <span>e-mail</span>
                         </label>
@@ -1309,18 +1309,22 @@
 
                     <p class="form__connect">выберите время звонка</p>
                     <div class="form__calltime">
-                        <div class="form__calltime__variant selected">Сейчас</div>
-                        <div class="form__calltime__variant">По времени</div>
+                        <div class="form__caltime-radio">
+                                <input type="radio"  checked name="calltimeRadio" id="calltime1">
+                                <input type="radio" name="calltimeRadio" id="calltime2">
+                        </div>
+                        <div class="form__calltime__variant selected" id="buttonCalltime1">Сейчас</div>
+                        <div class="form__calltime__variant" id="buttonCalltime2">По времени</div>
                     </div>
 
                     <div class="form__phone">
                         <label for="phone">когда вам будет удобно принять звонок?</label>
-                        <input placeholder="Например, сегодня в 14:00" type="text" >
+                        <input placeholder="Например, сегодня в 14:00" id="myModalTime" type="text" >
                     </div>
 
                     
                     <div class="form__button">
-                        <button class="button">
+                        <button class="button" id="myModalButton">
                             НАПИШИТЕ МНЕ
                         </button>
                     </div>
@@ -1419,9 +1423,13 @@
 
                 <div class="organization__form form">
                     <div class="organization__form__title">Какой тариф вас интересует?</div> 
-                    <div class="modal__info__tariffs-row">
-                        <div class="modal__info__tariffs__variant selected">Премиум</div>
-                        <div class="modal__info__tariffs__variant">Стандарт</div>
+                    <div class="form__calltime modal__info__tariffs-row">
+                        <div class="form__caltime-radio">
+                            <input type="radio"  checked name="calltimeRadio" id="calltime3">
+                            <input type="radio" name="calltimeRadio" id="calltime4">
+                        </div>
+                        <div class="modal__info__tariffs__variant form__calltime__variant selected" id="buttoncalltime3">Премиум</div>
+                        <div class="modal__info__tariffs__variant form__calltime__variant" id="buttoncalltime4">Стандарт</div>
                     </div>
                     <div class="form__phone">
                         <label for="phone">введите ваш номер телефона или e-mail</label>
@@ -1569,14 +1577,14 @@
                     <p class="form__connect">выберите способ связи</p>
 
                     <div class="radio-container">
-                        <input type="radio" selected="true" id="radio1" name="radio" />
-                        <label for="radio1">
+                        <input type="radio" selected="true" id="radio5" name="radio" />
+                        <label for="radio5" class="radioLabel">
                             <img src="assets/whatsapp_symbol.svg" alt="Whatsapp Image">
                             <span>Whatsapp</span>
                         </label>
                 
-                        <input type="radio" id="radio2" name="radio" />
-                        <label for="radio2">
+                        <input type="radio" id="radio6" name="radio" />
+                        <label for="radio6" class="radioLabel">
                             <img src="assets/messageIcon.png" alt="e-mail Image">
                             <span>e-mail</span>
                         </label>
@@ -1644,14 +1652,14 @@
                     <p class="form__connect">выберите способ связи</p>
 
                     <div class="radio-container">
-                        <input type="radio" selected="true" id="radio1" name="radio" />
-                        <label for="radio1">
+                        <input type="radio" selected="true" id="radio7" name="radio" />
+                        <label for="radio7" class="radioLabel">
                             <img src="assets/whatsapp_symbol.svg" alt="Whatsapp Image">
                             <span>Whatsapp</span>
                         </label>
                 
-                        <input type="radio" id="radio2" name="radio" />
-                        <label for="radio2">
+                        <input type="radio" id="radio8" name="radio" />
+                        <label for="radio8" class="radioLabel">
                             <img src="assets/messageIcon.png" alt="e-mail Image">
                             <span>e-mail</span>
                         </label>
