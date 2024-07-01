@@ -2141,4 +2141,6 @@ a.button {
 .modal__info__left-img.adaptive {
     display: none;
 }
-.form__caltime-radio {display: none;}
+.form__caltime-radio {
+    display: none;
+}
